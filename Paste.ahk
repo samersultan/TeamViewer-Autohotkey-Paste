@@ -5,6 +5,11 @@ SetWorkingDir %A_ScriptDir% ; Ensures a consistent starting directory.
 SetWinDelay 100
 SetKeyDelay 0
 
-^!v::
+
+
+~Enter::Suspend
++~Enter::Suspend
+`::Suspend
+^!b::
 SendRaw %clipboard%
 return
